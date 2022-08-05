@@ -1,0 +1,98 @@
+.review-box{
+    max-height: 60vh;
+    max-width: 60vw;
+    border-style: solid;
+    border-color: rgba(52, 50, 50, 0.149);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    transition: all 1s;
+
+}
+.review-box:hover{
+    transition: all 0.8s;
+    box-shadow: 0px 2px 25px 2px rgb(0,0,0,0.5);
+}
+.img-container{
+    position:relative;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+.img-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(126, 190, 169);
+    position: absolute; /*This is important*/
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+  }
+.img-container img{
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.quote{
+    background-color: rgb(126, 190, 169);
+    border-radius: 50%;
+    height: 2.5rem;
+    width:2.5rem;
+    position: absolute; /*This is important*/
+    top:0px;
+    left: 0px;
+    display: grid; /*This is important*/
+    place-items: center; /*This is important*/
+}
+.name{
+    text-transform: capitalize;
+}
+.job{
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+    color:rgb(94, 148, 130);
+}
+.message{
+    margin-bottom: 0.75rem;
+    color:rgb(133, 129, 129);
+}
+.button-container{
+    margin-bottom: 0.75rem;
+}
+.next-button,.prev-button{
+    color:rgb(126, 190, 169);
+    background-color: transparent;
+    border-style: none;
+    font-size: 1.25rem;
+    transition: all 1s;
+    padding: 0.15rem;
+}
+.next-button:hover,.prev-button:hover{
+    color:whitesmoke;
+    background-color: rgb(126, 190, 169);
+    border-radius: 5px;
+    transition: all 1s;
+}
+.next-button:active,.prev-button:active{
+    transform: scale(0.9);
+    transition: all 1s;
+}
+.SurpriseMe{
+    background-color: rgb(126, 190, 169);
+    color:whitesmoke;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border-style: none;
+    font-size: medium;
+}
+.SurpriseMe:hover{
+    opacity: 0.8;
+}
+.SurpriseMe:active{
+    transform: scale(0.9);
+}

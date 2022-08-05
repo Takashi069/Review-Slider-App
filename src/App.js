@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Review from './Components/Review.jsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className='header'>Our Reviews</header>
+      <div className="underline"></div>
+      <br></br>
+      <br></br>
+      <Review />
+      <div className="disclaimer">
+        Most of the CSS of this website was inspired from the 
+        following Github Repo by 
+        <a href="https://github.com/john-smilga" target=" "id="author-repo">John Smilga:</a>  
+        <a href="https://github.com/john-smilga/react-projects/blob/master/03-reviews/final/src/index.css" target={" "}>03-Reviews's CSS</a>
+      </div>
     </div>
   );
 }
